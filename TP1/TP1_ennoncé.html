@@ -232,17 +232,17 @@ pre code {
 <ol start="8" style="list-style-type: decimal">
 <li><p>Sélectionner les 10 premières et les 10 dernières lignes du jeu de données de deux manières différentes (avec et sans l’utilisation des fonctions <code>head()</code> et <code>tail()</code>)</p></li>
 <li><p>Sélectionner la colonne <code>domicile</code> de trois manières différentes en n’affichant que les <span class="math inline">\(6\)</span> premières lignes à chaque fois</p></li>
-<li><p>Sélectionner les colonnes <code>age</code> et <code>exercice</code> de deux manière différentes et n’afficher que les <span class="math inline">\(6\)</span> premières lignes</p></li>
+<li><p>Sélectionner les colonnes <code>age</code> et <code>exercice</code> de deux manières différentes et n’afficher que les <span class="math inline">\(6\)</span> premières lignes</p></li>
 <li><p>Sélectionner pour les individus numéros 1, 50 et 1000, les variables <code>sexe</code>, <code>situation</code> et <code>etudes</code></p></li>
 <li><p>Quelles sont les modalités de la variables <code>filiere</code> (fonction <code>levels()</code>) ?</p></li>
 <li><p>Recoder la variable sexe pour qu’elle prenne les modalités Femme et Homme au lieu de F et G</p></li>
 <li><p>A l’aide de la fonction <code>subset()</code>, créer un objet <code>ishare_femme</code> contenant uniquement les observations des femmes.</p></li>
 </ol>
-<p>Combien y a-t-il de fille dans l’étude IShare ?</p>
+<p>Combien y a-t-il de femmes dans l’étude IShare ?</p>
 <ol start="15" style="list-style-type: decimal">
 <li>Créer un objet “ishare_homme_20” contenant uniquement les observations des hommes agés de <span class="math inline">\(20\)</span> ans ou plus.</li>
 </ol>
-<p>Combien y a-t-il de garçons agés de <span class="math inline">\(20\)</span> ou plus dans l’étude IShare ?</p>
+<p>Combien y a-t-il d’hommes agés de <span class="math inline">\(20\)</span> ou plus dans l’étude IShare ?</p>
 <ol start="16" style="list-style-type: decimal">
 <li><p>Sélectionner le domicile des personnes agés de 18ans</p></li>
 <li><p>Recréer les objets <code>ishare_femme</code> et <code>ishare_homme_20</code> des questions 14 et 15 sans passer par la fonction <code>subset()</code></p></li>
@@ -266,8 +266,8 @@ pre code {
 </div>
 <div id="gestion-des-valeurs-manquantes" class="section level1">
 <h1>Gestion des valeurs manquantes</h1>
-<ol start="28" style="list-style-type: decimal">
-<li><p>Dans un objet <code>ishare2</code>, importer le jeu de données <code>DonneesIshare_NA.csv</code>. Comment sont codées les valeurs manquantes dans ce fichier ? Refaire l’importation des données en tenant compte de cette remarque.</p></li>
+<ol start="29" style="list-style-type: decimal">
+<li><p>Dans un objet <code>ishare2</code>, importer le jeu de données <code>DonneesIshare_NA.csv</code>. Comment sont codées les valeurs manquantes dans ce fichier ? S’il y a un problème, refaire l’importation des données en tenant compte de cette remarque.</p></li>
 <li><p>Calculer l’age moyen des participants de cette étude</p></li>
 <li><p>A l’aide de la fonction <code>na.omit()</code> supprimer toutes les lignes comportant au moins une valeur manquante. Combien y avait-il d’observations pour lesquelles au moins une valeur était manquante?</p></li>
 </ol>
