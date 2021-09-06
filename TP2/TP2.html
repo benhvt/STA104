@@ -173,7 +173,7 @@ pre code {
 
 <div id="jeu-de-données-gapminder" class="section level1">
 <h1>Jeu de données gapminder</h1>
-<p>Ce jeu de données contient se compose de <span class="math inline">\(1704\)</span> observations et de <span class="math inline">\(6\)</span> variables. Ces variables sont :</p>
+<p>Ce jeu de données se compose de <span class="math inline">\(1704\)</span> observations et de <span class="math inline">\(6\)</span> variables. Ces variables sont :</p>
 <ul>
 <li><p><code>country</code> (Qualitative) : Le pays</p></li>
 <li><p><code>continent</code> (Qualitative) : Le continent</p></li>
@@ -188,7 +188,7 @@ pre code {
 <ol style="list-style-type: decimal">
 <li><p>Dans un objet <code>gapminder</code> importer le jeu de données. Recoder le type des variables si nécessaire.</p></li>
 <li><p>Pour combien de pays différents les données sont-elles disponibles ?</p></li>
-<li><p>Afficher la liste des différentes années pour lesquels des données sont disponibles (fonction <code>unique()</code>)</p></li>
+<li><p>Afficher la liste des différentes années pour lesquelles des données sont disponibles (fonction <code>unique()</code>)</p></li>
 </ol>
 </div>
 <div id="fonction" class="section level1">
@@ -197,7 +197,7 @@ pre code {
 <li>Créer une fonction <code>moyenne()</code> qui prend comme argument une variable numérique et renvoie sa moyenne empirique. Appliquer-là sur les variables numériques disponibles dans les données et comparer les résultats avec ceux renvoyés par la fonction <code>mean()</code> de R.</li>
 </ol>
 <ul>
-<li>Etape 1 : Création de la fonction avec <code>function(){}</code> prenant comme un argument un vecteur <code>x</code></li>
+<li>Etape 1 : Création de la fonction avec <code>function(){}</code> prenant comme argument un vecteur <code>x</code></li>
 <li>Etape 2 : Récupérer dans un objet <code>n</code> le nombre d’observations contenues dans le vecteur <code>x</code> (fonction <code>length()</code>)</li>
 <li>Etape 3 : Calcul de la moyenne dans un objet <code>moy</code></li>
 <li>Etape 4 : Renvoyer l’objet <code>moy</code> à l’aide de la fonction <code>return()</code></li>
@@ -205,7 +205,7 @@ pre code {
 <ol start="5" style="list-style-type: decimal">
 <li><p>Créer une fonction <code>ecart_type()</code> qui prend comme argument une variable numérique et renvoie son écart type empirique. Appliquer-là sur les variables numériques disponibles dans les données et comparer les résultats avec ceux renvoyés par la fonction <code>sd()</code> de R. Qu’observez-vous ?</p></li>
 <li><p>Créer une fonction <code>gapminder_year</code> permettant de récupérer le sous-ensemble de données correspondant à une année particulière spécifiée par l’utilisateur en argument.</p></li>
-<li><p>A l’aide de cette fonction, créer un objet <code>gapminder_2007</code> contenant le sous-ensemble de données relatives à l’année 2007. Supprimer ensuite la colonne <code>year</code> de ce nouveau jeu de données.</p></li>
+<li><p>A l’aide de cette fonction, créer un objet <code>gapminder_2007</code> contenant le sous-ensemble de données concernant l’année 2007. Supprimer ensuite la colonne <code>year</code> de ce nouveau jeu de données.</p></li>
 <li><p>Modifier la fonction <code>gapminder_year</code> afin de tester si le sous-ensemble de données contient bien au moins une ligne (en utilisant <code>if</code> et <code>else</code>) et qui renvoie un message d’erreur si ce n’est pas le cas (grâce à la fonction <code>warning()</code>). <em>Il s’agit d’un moyen de vérifier qu’il y a bien des données disponibles pour l’année sélectionnée par l’utilisateur dans nos données</em>. Tester la fonction avec les années 2007 et 2021.</p></li>
 <li><p>A l’aide des fonctions précédentes, créer une fonction prenant comme arguments une année et un continent qui renvoie l’espérance de vie moyenne sur le continent pour l’année sélectionnée. Tester la fonction pour calculer l’espérance de vie moyenne en Europe en 1952.</p></li>
 <li><p>On voudrait maintenant obtenir l’évolution de l’espérance de vie moyenne en Europe au cours du temps.</p></li>
@@ -213,8 +213,8 @@ pre code {
 <ul>
 <li>Etape 1 : Récupérer l’ensemble des années disponibles de l’étude dans un objet <code>year</code> (à l’aide de la fonction <code>unique()</code>)</li>
 <li>Etape 2 : Créer un vecteur <code>mean_LifeExp_Europe</code> contenant autant de <code>NA</code> qu’il y a d’années (ce vecteur servira à sauvegarder les valeurs de l’espérance de vie moyenne en Europe pour chaque année)</li>
-<li>Etape 3 : A l’aide d’une boucle <code>for</code> et de la fonction précédente, calculer pour chaque année possible, la valeur mooyenne de l’espérance de vie en Europe et l’enregistrer dans le vecteur <code>mean_LifeExp_Europe</code></li>
-<li>Etape 4 : Représenter garphiquement l’évolution de l’espérance de vie moyenne en Europe au cours du temps</li>
+<li>Etape 3 : A l’aide d’une boucle <code>for</code> et de la fonction précédente, calculer, pour chaque année possible, la valeur moyenne de l’espérance de vie en Europe et l’enregistrer dans le vecteur <code>mean_LifeExp_Europe</code></li>
+<li>Etape 4 : Représenter graphiquement l’évolution de l’espérance de vie moyenne en Europe au cours du temps</li>
 </ul>
 </div>
 <div id="graphiques-avec-ggplot2" class="section level1">
@@ -225,8 +225,8 @@ pre code {
 <li><p>Représenter le nuage de points de l’espérance de vie (variable <code>lifeExp</code>) en fonction de du PIB par habitant (variable <code>gdpPercap</code>) à l’aide de ggplot</p></li>
 <li><p>Refaire le même nuage de points en ajoutant une coloration des points en fonction du continent dans lequel il se trouve</p></li>
 <li><p>Modifier le nom des modalités (les écrire en français) et les couleurs par défaut des points avec les arguments <code>labels</code> et <code>values</code> de la fonction <code>scale_color_manual()</code></p></li>
-<li><p>Tracer les boxplots de la population dans les différents pays de l’Océanie (<code>geom_boxplot()</code>) <em>On commencera par créer un jeu de données ne contenant que des observations de pays en Océanie</em></p></li>
-<li><p>Changer la couleur et le remplissage des boxplots ci-dessus (argument <code>color</code> et <code>fill</code> de la fonction <code>geom_boxplot()</code>)</p></li>
+<li><p>Tracer les boxplots de la population dans les différents pays de l’Océanie (<code>geom_boxplot()</code>) <em>On commencera par créer un jeu de données ne contenant que les observations de pays en Océanie</em></p></li>
+<li><p>Changer la couleur et le remplissage des boxplots ci-dessus (arguments <code>color</code> et <code>fill</code> de la fonction <code>geom_boxplot()</code>)</p></li>
 <li><p>Tracer la densité de la variable <code>gdpPercap</code> (<code>geom_density()</code>) pour l’année 2007</p></li>
 <li><p>Tracer la densité du PIB par habitant pour l’année 2007 en rajoutant un remplissage en fonction du continent</p></li>
 <li><p>Tracer l’évolution de l’espérance de vie moyenne en Europe au cours du temps avec les fonctions de ggplot.</p></li>
