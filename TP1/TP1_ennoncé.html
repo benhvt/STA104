@@ -231,8 +231,8 @@ pre code {
 <h1>Manipulation de données</h1>
 <ol start="8" style="list-style-type: decimal">
 <li><p>Sélectionner les 10 premières et les 10 dernières lignes du jeu de données de deux manières différentes (avec et sans l’utilisation des fonctions <code>head()</code> et <code>tail()</code>)</p></li>
-<li><p>Sélectionner la colonne <code>domicile</code> de trois manières différentes en n’affichant que les <span class="math inline">\(6\)</span> observations lignes à chaque fois</p></li>
-<li><p>Sélectionner les colonnes <code>age</code> et <code>exercice</code> de deux manière différentes et afficher les <span class="math inline">\(6\)</span> premières lignes</p></li>
+<li><p>Sélectionner la colonne <code>domicile</code> de trois manières différentes en n’affichant que les <span class="math inline">\(6\)</span> premières lignes à chaque fois</p></li>
+<li><p>Sélectionner les colonnes <code>age</code> et <code>exercice</code> de deux manière différentes et n’afficher que les <span class="math inline">\(6\)</span> premières lignes</p></li>
 <li><p>Sélectionner pour les individus numéros 1, 50 et 1000, les variables <code>sexe</code>, <code>situation</code> et <code>etudes</code></p></li>
 <li><p>Quelles sont les modalités de la variables <code>filiere</code> (fonction <code>levels()</code>) ?</p></li>
 <li><p>Recoder la variable sexe pour qu’elle prenne les modalités Femme et Homme au lieu de F et G</p></li>
@@ -255,12 +255,13 @@ pre code {
 <li><p>Refaire la question précédente en utilisant la fonction <code>apply()</code></p></li>
 <li><p>Quel est le nombre maximum de fruits consommés par un participant dans l’étude ? Le nombre minimum ?</p></li>
 <li><p>Quel individus a le plut petit imc ? Le plus grand ?</p></li>
-<li><p>Calculer l’age moyens des hommes de l’études ? Calculer ensuite celui des femmes en filière scientifique.</p></li>
+<li><p>Calculer l’age moyens des hommes de l’étude ? Calculer ensuite celui des femmes en filière scientifique.</p></li>
 <li><p>Donner le nombre d’observations de chaque modalité de la variable <code>domicile</code></p></li>
 <li><p>En utilisant la fonction <code>which.max()</code>, quelle est la filière la plus représentée dans les données ?</p></li>
 <li><p>A l’aide de la fonction <code>summary()</code> afficher les principales statistiques descriptives des données</p></li>
 <li><p>Tracer l’histogramme de la variable <code>imc</code>. Changer le titre et le nom de l’axe des abscisses.</p></li>
 <li><p>Représenter le boxplot du score <code>malbouffe</code> en fonction du domicile. Ajouter un titre et renommer les axes.</p></li>
+<li><p>Ajouter une variable ratio définie comme étant : <span class="math inline">\(\text{ratio}=\frac{\text{malbouffe}}{\text{fruits}+1}\)</span></p></li>
 </ol>
 </div>
 <div id="gestion-des-valeurs-manquantes" class="section level1">
